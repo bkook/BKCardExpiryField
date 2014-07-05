@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF34238D1968527300BB3BEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF34238C1968527300BB3BEE /* Foundation.framework */; };
+		DF34238F1968527300BB3BEE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF34238E1968527300BB3BEE /* CoreGraphics.framework */; };
+		DF3423911968527300BB3BEE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3423901968527300BB3BEE /* UIKit.framework */; };
+		DF3423971968527300BB3BEE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF3423951968527300BB3BEE /* InfoPlist.strings */; };
+		DF3423991968527300BB3BEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3423981968527300BB3BEE /* main.m */; };
+		DF34239D1968527300BB3BEE /* BKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF34239C1968527300BB3BEE /* BKAppDelegate.m */; };
+		DF3423A01968527300BB3BEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF34239E1968527300BB3BEE /* Main.storyboard */; };
+		DF3423A31968527300BB3BEE /* BKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3423A21968527300BB3BEE /* BKViewController.m */; };
+		DF3423A51968527300BB3BEE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF3423A41968527300BB3BEE /* Images.xcassets */; };
+		DF3423AC1968527300BB3BEE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3423AB1968527300BB3BEE /* XCTest.framework */; };
+		DF3423AD1968527300BB3BEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF34238C1968527300BB3BEE /* Foundation.framework */; };
+		DF3423AE1968527300BB3BEE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3423901968527300BB3BEE /* UIKit.framework */; };
+		DF3423B61968527300BB3BEE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF3423B41968527300BB3BEE /* InfoPlist.strings */; };
+		DF3423B81968527300BB3BEE /* BKCardExpiryFieldDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3423B71968527300BB3BEE /* BKCardExpiryFieldDemoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DF3423AF1968527300BB3BEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF3423811968527300BB3BEE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF3423881968527300BB3BEE;
+			remoteInfo = BKCardExpiryFieldDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DF3423891968527300BB3BEE /* BKCardExpiryFieldDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BKCardExpiryFieldDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF34238C1968527300BB3BEE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DF34238E1968527300BB3BEE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DF3423901968527300BB3BEE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DF3423941968527300BB3BEE /* BKCardExpiryFieldDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BKCardExpiryFieldDemo-Info.plist"; sourceTree = "<group>"; };
+		DF3423961968527300BB3BEE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DF3423981968527300BB3BEE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DF34239A1968527300BB3BEE /* BKCardExpiryFieldDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BKCardExpiryFieldDemo-Prefix.pch"; sourceTree = "<group>"; };
+		DF34239B1968527300BB3BEE /* BKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BKAppDelegate.h; sourceTree = "<group>"; };
+		DF34239C1968527300BB3BEE /* BKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BKAppDelegate.m; sourceTree = "<group>"; };
+		DF34239F1968527300BB3BEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DF3423A11968527300BB3BEE /* BKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BKViewController.h; sourceTree = "<group>"; };
+		DF3423A21968527300BB3BEE /* BKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BKViewController.m; sourceTree = "<group>"; };
+		DF3423A41968527300BB3BEE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DF3423AA1968527300BB3BEE /* BKCardExpiryFieldDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BKCardExpiryFieldDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF3423AB1968527300BB3BEE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DF3423B31968527300BB3BEE /* BKCardExpiryFieldDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BKCardExpiryFieldDemoTests-Info.plist"; sourceTree = "<group>"; };
+		DF3423B51968527300BB3BEE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DF3423B71968527300BB3BEE /* BKCardExpiryFieldDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BKCardExpiryFieldDemoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF3423861968527300BB3BEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF34238F1968527300BB3BEE /* CoreGraphics.framework in Frameworks */,
+				DF3423911968527300BB3BEE /* UIKit.framework in Frameworks */,
+				DF34238D1968527300BB3BEE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF3423A71968527300BB3BEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF3423AC1968527300BB3BEE /* XCTest.framework in Frameworks */,
+				DF3423AE1968527300BB3BEE /* UIKit.framework in Frameworks */,
+				DF3423AD1968527300BB3BEE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF3423801968527300BB3BEE = {
+			isa = PBXGroup;
+			children = (
+				DF3423921968527300BB3BEE /* BKCardExpiryFieldDemo */,
+				DF3423B11968527300BB3BEE /* BKCardExpiryFieldDemoTests */,
+				DF34238B1968527300BB3BEE /* Frameworks */,
+				DF34238A1968527300BB3BEE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF34238A1968527300BB3BEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF3423891968527300BB3BEE /* BKCardExpiryFieldDemo.app */,
+				DF3423AA1968527300BB3BEE /* BKCardExpiryFieldDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF34238B1968527300BB3BEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF34238C1968527300BB3BEE /* Foundation.framework */,
+				DF34238E1968527300BB3BEE /* CoreGraphics.framework */,
+				DF3423901968527300BB3BEE /* UIKit.framework */,
+				DF3423AB1968527300BB3BEE /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF3423921968527300BB3BEE /* BKCardExpiryFieldDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DF34239B1968527300BB3BEE /* BKAppDelegate.h */,
+				DF34239C1968527300BB3BEE /* BKAppDelegate.m */,
+				DF34239E1968527300BB3BEE /* Main.storyboard */,
+				DF3423A11968527300BB3BEE /* BKViewController.h */,
+				DF3423A21968527300BB3BEE /* BKViewController.m */,
+				DF3423A41968527300BB3BEE /* Images.xcassets */,
+				DF3423931968527300BB3BEE /* Supporting Files */,
+			);
+			path = BKCardExpiryFieldDemo;
+			sourceTree = "<group>";
+		};
+		DF3423931968527300BB3BEE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF3423941968527300BB3BEE /* BKCardExpiryFieldDemo-Info.plist */,
+				DF3423951968527300BB3BEE /* InfoPlist.strings */,
+				DF3423981968527300BB3BEE /* main.m */,
+				DF34239A1968527300BB3BEE /* BKCardExpiryFieldDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DF3423B11968527300BB3BEE /* BKCardExpiryFieldDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				DF3423B71968527300BB3BEE /* BKCardExpiryFieldDemoTests.m */,
+				DF3423B21968527300BB3BEE /* Supporting Files */,
+			);
+			path = BKCardExpiryFieldDemoTests;
+			sourceTree = "<group>";
+		};
+		DF3423B21968527300BB3BEE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF3423B31968527300BB3BEE /* BKCardExpiryFieldDemoTests-Info.plist */,
+				DF3423B41968527300BB3BEE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF3423881968527300BB3BEE /* BKCardExpiryFieldDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF3423BB1968527300BB3BEE /* Build configuration list for PBXNativeTarget "BKCardExpiryFieldDemo" */;
+			buildPhases = (
+				DF3423851968527300BB3BEE /* Sources */,
+				DF3423861968527300BB3BEE /* Frameworks */,
+				DF3423871968527300BB3BEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BKCardExpiryFieldDemo;
+			productName = BKCardExpiryFieldDemo;
+			productReference = DF3423891968527300BB3BEE /* BKCardExpiryFieldDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DF3423A91968527300BB3BEE /* BKCardExpiryFieldDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF3423BE1968527300BB3BEE /* Build configuration list for PBXNativeTarget "BKCardExpiryFieldDemoTests" */;
+			buildPhases = (
+				DF3423A61968527300BB3BEE /* Sources */,
+				DF3423A71968527300BB3BEE /* Frameworks */,
+				DF3423A81968527300BB3BEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF3423B01968527300BB3BEE /* PBXTargetDependency */,
+			);
+			name = BKCardExpiryFieldDemoTests;
+			productName = BKCardExpiryFieldDemoTests;
+			productReference = DF3423AA1968527300BB3BEE /* BKCardExpiryFieldDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF3423811968527300BB3BEE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BK;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Byungkook Jang";
+				TargetAttributes = {
+					DF3423A91968527300BB3BEE = {
+						TestTargetID = DF3423881968527300BB3BEE;
+					};
+				};
+			};
+			buildConfigurationList = DF3423841968527300BB3BEE /* Build configuration list for PBXProject "BKCardExpiryFieldDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF3423801968527300BB3BEE;
+			productRefGroup = DF34238A1968527300BB3BEE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF3423881968527300BB3BEE /* BKCardExpiryFieldDemo */,
+				DF3423A91968527300BB3BEE /* BKCardExpiryFieldDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF3423871968527300BB3BEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF3423A51968527300BB3BEE /* Images.xcassets in Resources */,
+				DF3423971968527300BB3BEE /* InfoPlist.strings in Resources */,
+				DF3423A01968527300BB3BEE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF3423A81968527300BB3BEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF3423B61968527300BB3BEE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF3423851968527300BB3BEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF3423A31968527300BB3BEE /* BKViewController.m in Sources */,
+				DF3423991968527300BB3BEE /* main.m in Sources */,
+				DF34239D1968527300BB3BEE /* BKAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF3423A61968527300BB3BEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF3423B81968527300BB3BEE /* BKCardExpiryFieldDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DF3423B01968527300BB3BEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF3423881968527300BB3BEE /* BKCardExpiryFieldDemo */;
+			targetProxy = DF3423AF1968527300BB3BEE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DF3423951968527300BB3BEE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF3423961968527300BB3BEE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DF34239E1968527300BB3BEE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF34239F1968527300BB3BEE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DF3423B41968527300BB3BEE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF3423B51968527300BB3BEE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF3423B91968527300BB3BEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DF3423BA1968527300BB3BEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF3423BC1968527300BB3BEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BKCardExpiryFieldDemo/BKCardExpiryFieldDemo-Prefix.pch";
+				INFOPLIST_FILE = "BKCardExpiryFieldDemo/BKCardExpiryFieldDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DF3423BD1968527300BB3BEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BKCardExpiryFieldDemo/BKCardExpiryFieldDemo-Prefix.pch";
+				INFOPLIST_FILE = "BKCardExpiryFieldDemo/BKCardExpiryFieldDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DF3423BF1968527300BB3BEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BKCardExpiryFieldDemo.app/BKCardExpiryFieldDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BKCardExpiryFieldDemo/BKCardExpiryFieldDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BKCardExpiryFieldDemoTests/BKCardExpiryFieldDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DF3423C01968527300BB3BEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BKCardExpiryFieldDemo.app/BKCardExpiryFieldDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BKCardExpiryFieldDemo/BKCardExpiryFieldDemo-Prefix.pch";
+				INFOPLIST_FILE = "BKCardExpiryFieldDemoTests/BKCardExpiryFieldDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF3423841968527300BB3BEE /* Build configuration list for PBXProject "BKCardExpiryFieldDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF3423B91968527300BB3BEE /* Debug */,
+				DF3423BA1968527300BB3BEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF3423BB1968527300BB3BEE /* Build configuration list for PBXNativeTarget "BKCardExpiryFieldDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF3423BC1968527300BB3BEE /* Debug */,
+				DF3423BD1968527300BB3BEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DF3423BE1968527300BB3BEE /* Build configuration list for PBXNativeTarget "BKCardExpiryFieldDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF3423BF1968527300BB3BEE /* Debug */,
+				DF3423C01968527300BB3BEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF3423811968527300BB3BEE /* Project object */;
+}
