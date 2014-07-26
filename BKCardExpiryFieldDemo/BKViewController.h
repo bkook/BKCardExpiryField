@@ -12,5 +12,6 @@
 @interface BKViewController : UIViewController <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet BKCardExpiryField *cardExpiryField;
+@property (weak, nonatomic) IBOutlet UITextView *textView;
 
 @end

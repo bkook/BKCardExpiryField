@@ -19,8 +19,8 @@
     [super viewDidLoad];
     
     [self.cardExpiryField becomeFirstResponder];
-    
     [self.cardExpiryField setDelegate:self];
+    [self.cardExpiryField addTarget:self action:@selector(textFieldEditingChanged:) forControlEvents:UIControlEventEditingChanged];
 }
 
 - (void)didReceiveMemoryWarning
@@ -33,6 +33,11 @@
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {
+}
+
+- (void)textFieldEditingChanged:(UITextField *)textField
+{
+    self.textView.text = self.cardExpiryField.dateComponents.description;
 }
 
 

@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BKCardExpiryField : UITextField
+@interface BKCardExpiryField : UITextField <UITextFieldDelegate>
 
-@property (nonatomic) NSInteger         month;
-@property (nonatomic) NSInteger         year;
+@property (nonatomic, strong) NSDateComponents      *dateComponents;
 
 @end

@@ -8,7 +8,7 @@
 
 #import "BKCardExpiryField.h"
 
-@interface BKCardExpiryField () <UITextFieldDelegate>
+@interface BKCardExpiryField ()
 
 @property (nonatomic, assign) id<UITextFieldDelegate>   customDelegate;
 @property (nonatomic, strong) NSRegularExpression       *nonDigitRegularExpression;
@@ -49,6 +49,14 @@
 {
 }
 
+- (NSString *)numberOnlyStringWithString:(NSString *)string
+{
+    return [self.nonDigitRegularExpression stringByReplacingMatchesInString:string
+                                                                    options:0
+                                                                      range:NSMakeRange(0, string.length)
+                                                               withTemplate:@""];
+}
+
 #pragma mark - UITextFieldDelegate
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
@@ -59,28 +67,13 @@
         }
     }
     
-    self.month = 0;
-    self.year = 0;
-    
     // always accepts delete key
     if (string.length == 0) {
         return YES;
     }
     
-    string = [self.nonDigitRegularExpression stringByReplacingMatchesInString:string
-                                                                      options:0
-                                                                        range:NSMakeRange(0, string.length)
-                                                                 withTemplate:@""];
-    if (string.length == 0) {
-        return NO;
-    }
-    
     NSString *replacedString = [textField.text stringByReplacingCharactersInRange:range withString:string];
-    
-    NSString *numberOnlyString = [self.nonDigitRegularExpression stringByReplacingMatchesInString:replacedString
-                                                                                          options:0
-                                                                                            range:NSMakeRange(0, replacedString.length)
-                                                                                     withTemplate:@""];
+    NSString *numberOnlyString = [self numberOnlyStringWithString:replacedString];
     
     if (numberOnlyString.length > 4) {
         return NO;
@@ -101,7 +94,6 @@
             if (monthInteger < 1 || monthInteger > 12) {
                 return NO;
             }
-            self.month = monthInteger;
         }
         [formattedString appendString:monthString];
     }
@@ -113,12 +105,37 @@
     if (numberOnlyString.length > 2) {
         NSString *yearString = [numberOnlyString substringFromIndex:2];
         [formattedString appendString:yearString];
-        self.year = yearString.integerValue;
     }
+
+    [super setText:formattedString];
     
-    textField.text = formattedString;
+    [self sendActionsForControlEvents:UIControlEventEditingChanged];
     
     return NO;
+}
+
++ (NSInteger)currentYear
+{
+    NSDateComponents *currentDateComponents = [[NSCalendar currentCalendar] components:NSYearCalendarUnit fromDate:[NSDate date]];
+    return currentDateComponents.year;
+}
+
+- (NSDateComponents *)dateComponentsWithString:(NSString *)string
+{
+    NSString *numberString = [self numberOnlyStringWithString:string];
+    
+    NSDateComponents *result = [[NSDateComponents alloc] init];
+    
+    if (numberString.length > 1) {
+        result.month = [[numberString substringToIndex:2] integerValue];
+    }
+    
+    if (numberString.length > 3) {
+        NSInteger currentYear = [[self class] currentYear];
+        result.year = [[numberString substringFromIndex:2] integerValue] + (currentYear / 100 * 100);
+    }
+    
+    return result;
 }
 
 #pragma mark - Public methods
@@ -127,6 +144,24 @@
 {
     _customDelegate = delegate;
 }
+
+- (NSDateComponents *)dateComponents
+{
+    return [self dateComponentsWithString:self.text];
+}
+
+- (void)setDateComponents:(NSDateComponents *)dateComponents
+{
+    [super setText:[NSString stringWithFormat:@"%02d / %02d", dateComponents.month, dateComponents.year % 100]];
+}
+
+- (void)setText:(NSString *)text
+{
+    NSDateComponents *dateComp = [self dateComponentsWithString:text];
+    [self setDateComponents:dateComp];
+}
+
+#pragma mark - forward delegate methods
 
 - (void)forwardInvocation:(NSInvocation *)anInvocation
 {
