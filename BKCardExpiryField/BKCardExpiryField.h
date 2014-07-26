@@ -1,5 +1,5 @@
 //
-//  BKViewController.h
+//  BKCardExpiryField.h
 //  BKCardExpiryFieldDemo
 //
 //  Created by Byungkook Jang on 2014. 7. 6..
@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BKCardExpiryField.h"
 
-@interface BKViewController : UIViewController
+@interface BKCardExpiryField : UITextField
 
-@property (weak, nonatomic) IBOutlet BKCardExpiryField *cardExpiryField;
+@property (nonatomic) NSInteger         month;
+@property (nonatomic) NSInteger         year;
 
 @end

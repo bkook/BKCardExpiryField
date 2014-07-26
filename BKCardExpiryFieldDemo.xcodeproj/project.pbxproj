@@ -21,6 +21,7 @@
 		DF3423AE1968527300BB3BEE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3423901968527300BB3BEE /* UIKit.framework */; };
 		DF3423B61968527300BB3BEE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF3423B41968527300BB3BEE /* InfoPlist.strings */; };
 		DF3423B81968527300BB3BEE /* BKCardExpiryFieldDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3423B71968527300BB3BEE /* BKCardExpiryFieldDemoTests.m */; };
+		DF3423C41968541900BB3BEE /* BKCardExpiryField.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3423C31968541900BB3BEE /* BKCardExpiryField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		DF3423B31968527300BB3BEE /* BKCardExpiryFieldDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BKCardExpiryFieldDemoTests-Info.plist"; sourceTree = "<group>"; };
 		DF3423B51968527300BB3BEE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DF3423B71968527300BB3BEE /* BKCardExpiryFieldDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BKCardExpiryFieldDemoTests.m; sourceTree = "<group>"; };
+		DF3423C21968541900BB3BEE /* BKCardExpiryField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKCardExpiryField.h; sourceTree = "<group>"; };
+		DF3423C31968541900BB3BEE /* BKCardExpiryField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKCardExpiryField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,7 @@
 		DF3423921968527300BB3BEE /* BKCardExpiryFieldDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DF3423C11968532800BB3BEE /* BKCardExpiryField */,
 				DF34239B1968527300BB3BEE /* BKAppDelegate.h */,
 				DF34239C1968527300BB3BEE /* BKAppDelegate.m */,
 				DF34239E1968527300BB3BEE /* Main.storyboard */,
@@ -151,6 +155,15 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		DF3423C11968532800BB3BEE /* BKCardExpiryField */ = {
+			isa = PBXGroup;
+			children = (
+				DF3423C21968541900BB3BEE /* BKCardExpiryField.h */,
+				DF3423C31968541900BB3BEE /* BKCardExpiryField.m */,
+			);
+			path = BKCardExpiryField;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -200,6 +213,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Byungkook Jang";
 				TargetAttributes = {
+					DF3423881968527300BB3BEE = {
+						DevelopmentTeam = VK4AQ7RN7A;
+					};
 					DF3423A91968527300BB3BEE = {
 						TestTargetID = DF3423881968527300BB3BEE;
 					};
@@ -252,6 +268,7 @@
 			files = (
 				DF3423A31968527300BB3BEE /* BKViewController.m in Sources */,
 				DF3423991968527300BB3BEE /* main.m in Sources */,
+				DF3423C41968541900BB3BEE /* BKCardExpiryField.m in Sources */,
 				DF34239D1968527300BB3BEE /* BKAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,7 +351,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -366,7 +383,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -377,6 +394,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BKCardExpiryFieldDemo/BKCardExpiryFieldDemo-Prefix.pch";
 				INFOPLIST_FILE = "BKCardExpiryFieldDemo/BKCardExpiryFieldDemo-Info.plist";
@@ -390,6 +408,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BKCardExpiryFieldDemo/BKCardExpiryFieldDemo-Prefix.pch";
 				INFOPLIST_FILE = "BKCardExpiryFieldDemo/BKCardExpiryFieldDemo-Info.plist";
