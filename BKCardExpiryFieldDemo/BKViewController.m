@@ -19,6 +19,8 @@
     [super viewDidLoad];
     
     [self.cardExpiryField becomeFirstResponder];
+    
+    [self.cardExpiryField setDelegate:self];
 }
 
 - (void)didReceiveMemoryWarning
@@ -26,5 +28,12 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - UITextFieldDelegate
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+}
+
 
 @end

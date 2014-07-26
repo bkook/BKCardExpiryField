@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "BKCardExpiryField.h"
 
-@interface BKViewController : UIViewController
+@interface BKViewController : UIViewController <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet BKCardExpiryField *cardExpiryField;
 

@@ -128,4 +128,27 @@
     _customDelegate = delegate;
 }
 
+- (void)forwardInvocation:(NSInvocation *)anInvocation
+{
+    if ([_customDelegate respondsToSelector:anInvocation.selector]) {
+        [anInvocation invokeWithTarget:_customDelegate];
+    } else {
+        [super forwardInvocation:anInvocation];
+    }
+}
+
+- (BOOL)respondsToSelector:(SEL)aSelector
+{
+    return [super respondsToSelector:aSelector] || [_customDelegate respondsToSelector:aSelector];
+}
+
+- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector
+{
+    NSMethodSignature *signature = [super methodSignatureForSelector:aSelector];
+    if (nil == signature) {
+        signature = [(NSObject *)_customDelegate methodSignatureForSelector:aSelector];
+    }
+    return signature;
+}
+
 @end
