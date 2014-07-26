@@ -152,7 +152,7 @@
 
 - (void)setDateComponents:(NSDateComponents *)dateComponents
 {
-    [super setText:[NSString stringWithFormat:@"%02d / %02d", dateComponents.month, dateComponents.year % 100]];
+    [super setText:[NSString stringWithFormat:@"%02ld / %02ld", (long)dateComponents.month, (long)dateComponents.year % 100]];
 }
 
 - (void)setText:(NSString *)text
