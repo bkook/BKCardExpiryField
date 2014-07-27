@@ -107,7 +107,7 @@
         [formattedString appendString:yearString];
     }
 
-    [super setText:formattedString];
+    [self setText:formattedString];
     
     [self sendActionsForControlEvents:UIControlEventEditingChanged];
     
@@ -152,13 +152,7 @@
 
 - (void)setDateComponents:(NSDateComponents *)dateComponents
 {
-    [super setText:[NSString stringWithFormat:@"%02ld / %02ld", (long)dateComponents.month, (long)dateComponents.year % 100]];
-}
-
-- (void)setText:(NSString *)text
-{
-    NSDateComponents *dateComp = [self dateComponentsWithString:text];
-    [self setDateComponents:dateComp];
+    [self setText:[NSString stringWithFormat:@"%02ld / %02ld", (long)dateComponents.month, (long)dateComponents.year % 100]];
 }
 
 #pragma mark - forward delegate methods

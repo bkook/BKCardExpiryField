@@ -1,5 +1,5 @@
-#
-#  Be sure to run `pod spec lint BKCardExpiryField.podspec' to ensure this is a
+s
+s  Be sure to run `pod spec lint BKCardExpiryField.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "BKCardExpiryField"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "iOS control for credit card expiration date input."
 
 #  s.description  = <<-DESC
@@ -76,7 +76,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/bkook/BKCardExpiryField.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/bkook/BKCardExpiryField.git", :tag => "0.0.2" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
