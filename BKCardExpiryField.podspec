@@ -16,9 +16,10 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "BKCardExpiryField"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "iOS control for credit card expiration date input."
-
+  s.deprecated_in_favor_of = 'BKMoneyKit'
+  
 #  s.description  = <<-DESC
 #                   A longer description of BKCardExpiryField in Markdown format.
 #
@@ -76,7 +77,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/bkook/BKCardExpiryField.git", :tag => "0.0.2" }
+  s.source       = { :git => "https://github.com/bkook/BKCardExpiryField.git", :tag => "0.0.3" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
